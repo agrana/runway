@@ -1,4 +1,4 @@
-# Free Personal Stack
+# Runway a free personal stack
 
 ![Solution architecture: GitHub Actions coordinates Cloudflare DNS and Vercel deployment, with a conditional Supabase data and authentication connection.](docs/architecture/solution-overview.svg)
 
