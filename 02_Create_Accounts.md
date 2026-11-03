@@ -58,4 +58,4 @@ For Cloudflare DNS automation, request Zone Read and DNS Edit on the **specific 
 
 ## Next steps
 
-Use the [README starter prompt](README.md#start-with-your-coding-agent), [AGENTS.md](AGENTS.md) and [current bootstrap documentation](docs/bootstrap.md). Earlier deployment guides provide historical context; current disabled provisioning and migration gates take precedence.
+Use the [agent onboarding prompt](docs/onboard-your-agent.md), [AGENTS.md](AGENTS.md) and [current bootstrap documentation](docs/bootstrap.md). Earlier deployment guides provide historical context; current disabled provisioning and migration gates take precedence.

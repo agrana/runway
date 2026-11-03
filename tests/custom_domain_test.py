@@ -1139,8 +1139,9 @@ class CustomDomainTests(unittest.TestCase):
         self.assertNotIn('offline-github', blob)
 
     def test_onboarding_requires_verified_hostname(self):
-        for name in ('AGENTS.md', 'README.md', 'docs/secrets-only-launch.md',
-                     'docs/custom-domain.md', 'docs/new-app-runbook.md'):
+        for name in ('AGENTS.md', 'README.md', 'docs/onboard-your-agent.md',
+                     'docs/secrets-only-launch.md', 'docs/custom-domain.md',
+                     'docs/new-app-runbook.md'):
             with self.subTest(document=name):
                 text = (ROOT / name).read_text().lower()
                 self.assertIn('onboarding is complete only after', text)
@@ -1152,8 +1153,9 @@ class CustomDomainTests(unittest.TestCase):
         self.assertIn('## Required hostname and DNS', (ROOT / 'AGENTS.md').read_text())
 
     def test_operator_contract_requires_github_database_and_migrations(self):
-        for name in ('AGENTS.md', 'README.md', 'docs/secrets-only-launch.md',
-                     'docs/custom-domain.md', 'docs/new-app-runbook.md'):
+        for name in ('AGENTS.md', 'README.md', 'docs/onboard-your-agent.md',
+                     'docs/secrets-only-launch.md', 'docs/custom-domain.md',
+                     'docs/new-app-runbook.md'):
             with self.subTest(document=name):
                 text = (ROOT / name).read_text().lower()
                 for requirement in ('database', 'migration', 'rls', 'end-to-end-onboarding.md'):

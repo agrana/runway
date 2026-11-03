@@ -44,6 +44,7 @@ General documentation:
 - `database-onboarding.md` - Opt-in read-only managed-service catalog preflight (Secrets + merge); observed vs proven; remaining migration/RLS gates
 - `maintainer-verification.md` - Optional local reproduction of Actions quality checks; runner-managed Podman and disposable PostgreSQL
 - `new-app-runbook.md` - Human secrets-only launch plus maintainer local APP-008 rehearsal checklist
+- `onboard-your-agent.md` - Pasteable coding-agent prompt for GitHub-only shell deploy and DNS
 - `secrets-only-launch.md` - Secrets + merge-reviewed onboarding config path (maintainer Launch app retained)
 - `custom-domain.md` - Required application hostname and DNS stage (GitHub-only plan/apply/verify)
 - `BLOG_POST_SHORT.md` - Blog post content
