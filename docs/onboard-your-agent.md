@@ -1,21 +1,24 @@
 # Onboard your agent
 
-Paste the prompt below into your coding agent after you generate a repository with GitHub **Use this template** (not a fork or clone of upstream).
+Paste the prompt below into your coding agent when you first find this repository. You do not need a local clone yet. The agent should guide you to create your own app from the template, then through GitHub-only deploy.
 
-It walks the agent through GitHub-only shell deploy and hostname/DNS: accounts, Actions secrets, merge-reviewed config, and how to read readiness. You fill Secrets and merge config in GitHub; you should not need local installs for routine onboarding.
+You fill Secrets and merge config in GitHub; you should not need local installs for routine onboarding.
 
 ## Prompt
 
 ```text
-I generated an independent app repository from the Runway template
-(https://github.com/agrana/runway via GitHub “Use this template” — not a fork).
-Work only in THIS repository. Confirm it is my generated app, not upstream.
+I am new to https://github.com/agrana/runway. I have not created my app yet.
+Guide me from zero through GitHub-only shell deploy + hostname/DNS.
 
-Goal: guide me through GitHub-only shell deploy + hostname/DNS. I should only
-fill Secrets and merge reviewed config in GitHub. Do not require local installs,
-Terraform apply, or pasting credentials into chat.
+First step: help me create an independent repository with GitHub
+“Use this template” → Create a new repository (not Fork, not clone of upstream).
+Suggest a valid lowercase repo name and confirm Template repository stays off
+on my new app. After it exists, work only in THAT repository—not upstream.
 
-Read first: AGENTS.md, README.md, docs/secrets-only-launch.md,
+I should only fill Secrets and merge reviewed config in GitHub. Do not require
+local installs, Terraform apply, or pasting credentials into chat.
+
+In my generated repo, read: AGENTS.md, README.md, docs/secrets-only-launch.md,
 docs/end-to-end-onboarding.md, docs/custom-domain.md, onboarding.config.json.
 
 Then walk me step-by-step through:
