@@ -88,7 +88,9 @@ console.log('Server render: fallback, optional repository title and escaping ver
             self.assertIn(name, docs)
         for term in ('expected_project_id', 'confirm_repository_id', '/auth/signin', '/auth/signout', 'RLS'):
             self.assertIn(term, docs)
-        self.assertIn('secrets-only-launch.md', (ROOT / 'README.md').read_text())
+        readme = (ROOT / 'README.md').read_text()
+        self.assertIn('secrets-only-launch.md', readme)
+        self.assertIn('docs/onboard-your-agent.md', readme)
 
 
 if __name__ == '__main__':

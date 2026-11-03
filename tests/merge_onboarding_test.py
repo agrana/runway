@@ -452,8 +452,9 @@ class MergeOnboardingOrchestratorTests(unittest.TestCase):
         self.assertIn('workflow_dispatch', on_block)
 
     def test_docs_describe_merge_not_mandatory_dispatch(self):
-        for name in ('README.md', 'AGENTS.md', 'docs/secrets-only-launch.md',
-                     'docs/new-app-runbook.md', 'docs/end-to-end-onboarding.md'):
+        for name in ('README.md', 'AGENTS.md', 'docs/onboard-your-agent.md',
+                     'docs/secrets-only-launch.md', 'docs/new-app-runbook.md',
+                     'docs/end-to-end-onboarding.md'):
             text = (ROOT / name).read_text().lower()
             self.assertIn('onboarding.config.json', text)
             self.assertIn('auto_apply', text)
